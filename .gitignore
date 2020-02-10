@@ -1,2 +1,3 @@
 node_modules/
-.next/
+# .next/
+# not sure if we need to ignore next????
