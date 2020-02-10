@@ -14,7 +14,7 @@ const Home = () => {
     
 
     useEffect(() => {
-        fetch('http://localhost:3000/api/blog').then(data => data.json()).then(data => setPosts(data))
+        fetch('/api/blog').then(data => data.json()).then(data => setPosts(data))
     }, [])
 
     

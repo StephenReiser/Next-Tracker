@@ -30,7 +30,7 @@ var Home = function Home() {
       setPosts = _useState[1];
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('http://localhost:3000/api/blog').then(function (data) {
+    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('/api/blog').then(function (data) {
       return data.json();
     }).then(function (data) {
       return setPosts(data);
@@ -218,7 +218,7 @@ var NewPost = function NewPost(props) {
       date: '',
       title: ''
     });
-    fetch("http://localhost:3000/api/blog", {
+    fetch("/api/blog", {
       method: 'POST',
       body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_6___default()(myValue),
       headers: {
@@ -11102,7 +11102,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!***************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FStephenReiser%2FDesktop%2FSteveProject%2Fnext-sample%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************************************/
@@ -11125,5 +11125,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

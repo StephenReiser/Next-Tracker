@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -123,7 +123,7 @@ const Home = () => {
     1: setPosts
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('http://localhost:3000/api/blog').then(data => data.json()).then(data => setPosts(data));
+    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()('/api/blog').then(data => data.json()).then(data => setPosts(data));
   }, []);
   return __jsx("div", {
     className: "container",
@@ -283,7 +283,7 @@ const NewPost = props => {
       date: '',
       title: ''
     });
-    fetch(`http://localhost:3000/api/blog`, {
+    fetch(`/api/blog`, {
       method: 'POST',
       body: JSON.stringify(myValue),
       headers: {
@@ -2272,7 +2272,7 @@ const Index = () => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

@@ -36,7 +36,7 @@ const NewPost = (props) => {
             date: '',
             title: '',
         })
-        fetch(`http://localhost:3000/api/blog`, {
+        fetch(`/api/blog`, {
             method: 'POST',
             body: JSON.stringify(myValue),
             headers: {
