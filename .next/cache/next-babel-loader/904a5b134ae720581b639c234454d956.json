@@ -1,0 +1,1 @@
+{"ast":null,"code":"var __jsx = React.createElement;\nimport MyHead from '../components/MyHead';\nimport Home from '../components/Home';\nimport React, { useEffect } from 'react'; // import fetch from 'isomorphic-unfetch'\n\nconst Index = () => {\n  return __jsx(\"div\", null, __jsx(Home, null));\n};\n\nexport default Index;","map":null,"metadata":{},"sourceType":"module"}
