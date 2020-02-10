@@ -33,7 +33,7 @@ const Page = (props) => {
 Page.getInitialProps = async function(context) {
     const { id } = context.query;
     console.log(id)
-    const res = await fetch(`http://localhost:3000/api/blog`);
+    const res = await fetch(`/api/blog`);
     const post = await res.json();
     const myArr = post.filter(obj => {
       return obj.title === id
